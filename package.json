@@ -1,0 +1,14 @@
+{
+	"name": "fyle_assignment",
+	"version": "1.0.0",
+	"description": "Assignment to make a single page application",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"author": "Adarsh Narayan Jagati",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^9.0.0"
+	}
+}

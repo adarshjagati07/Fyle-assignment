@@ -1,0 +1,52 @@
+.growth {
+    grid-row: 5/6;
+    grid-column: 1/7;
+    background-color: $color-grey-light-2;
+    display: grid;
+    grid-template-columns: 1.2fr repeat(4, minmax(30rem, 1fr)) 1.2fr;
+
+    &__content {
+        grid-column: 2/6;
+    }
+    &__numbers {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 3rem;
+    }
+    &__block {
+        background-color: #fff;
+        height: 23.3rem;
+        width: 27rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+
+        &--num {
+            font-size: 6rem;
+            font-family: $font-display;
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+
+        &--name {
+            font-family: $font-display;
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__icon {
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+
+    &--h4 {
+        padding-top: 10rem;
+    }
+}

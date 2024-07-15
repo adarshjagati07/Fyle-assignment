@@ -1,0 +1,8 @@
+.feedback {
+    grid-row: 6/7;
+    grid-column: 2/6;
+
+    &--h4 {
+        padding-top: 10rem;
+    }
+}

@@ -1,0 +1,49 @@
+.header {
+    grid-row: 1/2;
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+    align-content: center;
+    padding: 10rem 0;
+
+    &__img {
+        grid-column: 2/3;
+        width: 100%;
+        padding-left: 3rem;
+    }
+
+    &__content {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &--h3 {
+        color: $color-primary;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    &--h1 {
+        font-weight: 700;
+    }
+
+    &__btn {
+        border: none;
+        align-self: self-start;
+        padding: 1.5rem 3rem;
+        width: 16rem;
+        height: 5rem;
+        margin-top: 6rem;
+        background-color: $color-primary;
+        color: #fff;
+        font-family: $font-display;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    &__detail {
+        margin-top: 5rem;
+        font-family: $font-display;
+        font-size: 1.6rem;
+    }
+}
