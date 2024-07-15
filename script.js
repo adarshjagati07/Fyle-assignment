@@ -25,6 +25,17 @@ function showSlides(n) {
 	dots[slideIndex].classList.add("active");
 }
 
+function changeImage(event, imgSrc) {
+	const projectDivs = document.querySelectorAll(".projects__container > div");
+
+	projectDivs.forEach((div) => div.classList.remove("projects--active"));
+
+	event.currentTarget.classList.add("projects--active");
+
+	const projectImage = document.querySelector(".projects__img");
+	projectImage.src = imgSrc;
+}
+
 // // Auto slide (Optional)
 // setInterval(() => {
 // 	showSlides((slideIndex += 1));
