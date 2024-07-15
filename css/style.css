@@ -14,7 +14,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1.2fr repeat(4, minmax(20rem, 1fr)) 1.2fr;
+  width: 100vw;
+  grid-template-columns: minmax(15rem, 1.2fr) repeat(4, minmax(20rem, 1fr)) minmax(15rem, 1.2fr);
   grid-template-rows: 80vh min-content min-content repeat(3, min-content); }
 
 .header {
@@ -29,7 +30,7 @@ body {
     grid-column: 2/3;
     width: 48.7rem;
     justify-self: right;
-    padding-left: 2rem; }
+    padding: 2rem; }
   .header__content {
     grid-column: 1/2;
     display: flex;
@@ -57,6 +58,76 @@ body {
     margin-top: 5rem;
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem; }
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60rem; }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; }
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; }
+  .contact-form h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 3rem; }
+  .contact-form input[type="email"],
+  .contact-form input[type="text"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid #edd3d3; }
+  .contact-form input[type="email"] {
+    width: 100%;
+    outline: none; }
+  .contact-form__names {
+    display: flex;
+    gap: 2rem; }
+  .contact-form .checkbox {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: start; }
+  .contact-form button {
+    background-color: #ff3147;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; }
 
 .projects {
   grid-row: 4/5;
@@ -148,6 +219,14 @@ body {
   .growth--h2 {
     text-align: center;
     margin-top: 4rem; }
+  @media only screen and (max-width: 1900px) {
+    .growth__numbers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+      gap: 3rem;
+      justify-items: center;
+      align-items: center;
+      align-content: center; } }
 
 .feedback {
   grid-row: 6/7;
@@ -234,6 +313,32 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.6rem; }
+  @media only screen and (max-width: 1920px) {
+    .qualities__listing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 2rem;
+      justify-content: center; } }
+  @media only screen and (max-width: 1700px) {
+    .qualities__listing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 2rem; }
+    .qualities__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  @media only screen and (max-width: 1100px) {
+    .qualities__listing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+      gap: 3rem;
+      justify-items: center; }
+    .qualities__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .services {
   grid-row: 2/3;

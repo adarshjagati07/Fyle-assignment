@@ -47,4 +47,40 @@
         font-weight: 400;
         font-size: 1.6rem;
     }
+    @media only screen and(max-width: $bp-largest) {
+        &__listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 2rem;
+            justify-content: center;
+        }
+    }
+
+    @media only screen and(max-width: $bp-large) {
+        &__listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: 2rem;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media only screen and(max-width: 1100px) {
+        &__listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+            gap: 3rem;
+            justify-items: center;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

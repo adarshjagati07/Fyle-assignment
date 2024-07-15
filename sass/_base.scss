@@ -9,6 +9,11 @@ $color-grey-dark-1: #808080;
 $font-primary: "Cormorant SC", serif;
 $font-display: "Poppins", sans-serif;
 
+//breakpoints
+$bp-largest: 1920px;
+$bp-large: 1700px;
+$bp-medium: 1100px;
+
 *,
 *::after,
 *::before {
@@ -28,6 +33,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1.2fr repeat(4, minmax(20rem, 1fr)) 1.2fr;
+    width: 100vw;
+    grid-template-columns: minmax(15rem, 1.2fr) repeat(4, minmax(20rem, 1fr)) minmax(15rem, 1.2fr);
     grid-template-rows: 80vh min-content min-content repeat(3, min-content);
 }

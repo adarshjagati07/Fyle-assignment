@@ -28,7 +28,31 @@
                     fringilla
                     ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
                 </p>
-                <button class="header__btn contact-us">Contact Us</button>
+                <button class="header__btn contact-us" id="contactBtn">Contact Us</button>
+                <!-- The popup element -->
+                <div id="contactPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <div class="contact-form">
+                            <h2>Talk to us</h2>
+                            <form action="https://getform.io/f/bgdylyea" method="POST">
+                                <input type="email" id="email" name="email" placeholder="Work Email" required>
+                                <div class="contact-form__names">
+                                    <input type="text" id="fname" placeholder="First Name" name="fname" required>
+                                    <input type="text" id="lname" placeholder="Last Name" name="lname" required>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms">I agree to Fyie's terms and conditions, and provide consent to
+                                        send me communication.</label>
+                                </div>
+                                <button type="submit">Contact Us</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- The popup element ends -->
             </div>
             <img src="./img/hero.png" alt="hero image" class="header__img">
         </div>
@@ -56,8 +80,8 @@
                                 <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
                                 <h2 class="slider__heading">Machine Learning</h2>
                                 <p class="slider__description">Some description for Machine Learing.</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <div class="slider__slide">
@@ -66,8 +90,8 @@
                                 <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
                                 <h2 class="slider__heading">App Development</h2>
                                 <p class="slider__description">Some description for App Development. </p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <div class="slider__slide">
@@ -77,8 +101,8 @@
                                 <h2 class="slider__heading">Web Development</h2>
                                 <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
                                     nibh. Pellentesque</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <div class="slider__slide">
@@ -88,8 +112,8 @@
                                 <h2 class="slider__heading">Python</h2>
                                 <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
                                     nibh. Pellentesque</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <!-- Repeat slides to fit the interval of dots -->
@@ -100,8 +124,8 @@
                                 <h2 class="slider__heading">JavaScript</h2>
                                 <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
                                     nibh. Pellentesque</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <div class="slider__slide">
@@ -111,8 +135,8 @@
                                 <h2 class="slider__heading">Full Stack</h2>
                                 <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
                                     nibh. Pellentesque</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <div class="slider__slide">
@@ -122,8 +146,8 @@
                                 <h2 class="slider__heading">Flutter Development</h2>
                                 <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
                                     nibh. Pellentesque</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com/" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                         <div class="slider__slide">
@@ -133,8 +157,8 @@
                                 <h2 class="slider__heading">Web Development</h2>
                                 <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
                                     nibh. Pellentesque</p>
-                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
-                                        id="slider__arrow"></a>
+                                <a href="https://www.fylehq.com" target="_blank" class="slider__button">READ MORE <img
+                                        src="./img/arrow.svg" alt="arrow" id="slider__arrow"></a>
                             </div>
                         </div>
                     </div>
@@ -152,25 +176,26 @@
                 Why we are best
             </h2>
             <section class="qualities__listing">
-                <div class="qualities__item--1">
+                <div class="qualities__item qualities__item--1">
                     <img src="./img/1-1.svg" alt="icon-1" class="qualities__icon">
                     <h5 class="heading--5 qualities__heading">Clarified Vision & Target</h5>
-                    <p class="qualities__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    <p class="qualities__content">Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam
                         nonumy.</p>
                 </div>
-                <div class="qualities__item--2">
+                <div class="qualities__item qualities__item--2">
                     <img src="./img/2-1.svg" alt="icon-2" class="qualities__icon">
                     <h5 class="heading--5 qualities__heading">High Performance</h5>
                     <p class="qualities__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                         nonumy.</p>
                 </div>
-                <div class="qualities__item--3">
+                <div class="qualities__item qualities__item--3">
                     <img src="./img/3-1.svg" alt="icon-3" class="qualities__icon">
                     <h5 class="heading--5 qualities__heading">Maintain Security</h5>
                     <p class="qualities__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                         nonumy.</p>
                 </div>
-                <div class="qualities__item--4">
+                <div class="qualities__item qualities__item--4">
                     <img src="./img/4.svg" alt="icon-4" class="qualities__icon">
                     <h5 class="heading--5 qualities__heading">Better Strategy & Quality</h5>
                     <p class="qualities__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
