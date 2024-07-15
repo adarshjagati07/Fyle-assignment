@@ -1,8 +1,44 @@
 .feedback {
     grid-row: 6/7;
     grid-column: 2/6;
+    display: grid;
+    justify-content: center;
 
     &--h4 {
         padding-top: 10rem;
+        text-align: center;
+    }
+    &--h2 {
+        text-align: center;
+    }
+
+    &__quotes {
+        margin-bottom: -2.5rem;
+    }
+
+    &__listing {
+        width: 83rem;
+        font-size: 2rem;
+        font-family: $font-display;
+        font-weight: 400;
+    }
+
+    &__content {
+        text-align: center;
+        font-size: 2rem;
+        display: flex;
+        gap: 1rem;
+        margin-top: 2.4rem;
+        margin-bottom: 10rem;
+    }
+    &__author {
+        color: $color-primary;
+        font-family: $font-display;
+        font-weight: 700;
+    }
+    &__company {
+        color: #808080;
+        font-family: $font-display;
+        font-weight: 300;
     }
 }

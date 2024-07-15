@@ -32,20 +32,119 @@
             </div>
             <img src="./img/hero.png" alt="hero image" class="header__img">
         </div>
+        <div class="bgcolor-services"></div>
         <div class="services">
             <h4 class="heading--4 services--h4">
                 What we do
             </h4>
-            <h2 class="heading--2 services--h2">
-                Services provide for you
-            </h2>
-            <p class="content">
-                Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla
-                ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
-            </p>
-            <section class="gallery">
-                Gallery
-            </section>
+            <div class="services__content--box">
+                <h2 class="heading--2 services--h2">
+                    Services provide for you
+                </h2>
+                <p class="services__content--detail">
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
+                    fringilla
+                    ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+                </p>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slider__slides">
+                        <div class="slider__slide">
+                            <img src="./img/1-2.png" alt="Image 1">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">Machine Learning</h2>
+                                <p class="slider__description">Some description for Machine Learing.</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <img src="./img/2-2.png" alt="Image 2">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">App Development</h2>
+                                <p class="slider__description">Some description for App Development. </p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <img src="./img/image.png" alt="Image 3">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">Web Development</h2>
+                                <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
+                                    nibh. Pellentesque</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <img src="./img/3-2.png" alt="Image 4">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">Python</h2>
+                                <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
+                                    nibh. Pellentesque</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <!-- Repeat slides to fit the interval of dots -->
+                        <div class="slider__slide">
+                            <img src="./img/hero.png" alt="Image 1">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">JavaScript</h2>
+                                <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
+                                    nibh. Pellentesque</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <img src="./img/2-2.png" alt="Image 2">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">Full Stack</h2>
+                                <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
+                                    nibh. Pellentesque</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <img src="./img/2-2.png" alt="Image 3">
+                            <div class="content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">Flutter Development</h2>
+                                <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
+                                    nibh. Pellentesque</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <img src="./img/2-2.png" alt="Image 4">
+                            <div class="slider__content">
+                                <img src="./img/icon.svg" alt="slider icon" id="slider--icon">
+                                <h2 class="slider__heading">Web Development</h2>
+                                <p class="slider__description">Morbi sed lacus nec risus finibus feugiat et fermentum
+                                    nibh. Pellentesque</p>
+                                <a href="#" class="slider__button">READ MORE <img src="./img/arrow.svg" alt="arrow"
+                                        id="slider__arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="dot" onclick="currentSlide(0)"></div>
+                    <div class="dot" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                </div>
+            </div>
         </div>
         <div class="qualities">
             <h4 class="heading--4 qualities--h4">Why Choose us</h4>
@@ -80,6 +179,7 @@
             </section>
         </div>
         <div class="projects">Our Projects</div>
+        <div class="growth__bgcolor"></div>
         <div class="growth">
             <div class="growth__content">
                 <h4 class="heading--4 growth--h4">Experts Growths</h4>
@@ -115,18 +215,21 @@
             <h2 class="heading--2 feedback--h2">
                 people say's about us !
             </h2>
+            <img src="./img/Quotemarks-left.svg" alt="quotes" class="feedback__quotes">
+            <p class="feedback__listing">
+                Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                interested. Sections Bonorum et Malorum original.
+            </p>
             <div class="feedback__content">
-                <p class="feedback__listing">
-                    Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                    interested. Sections Bonorum et Malorum original.
-                </p>
                 <p class="feedback__author">JANNAT TUMPA</p>
                 <p class="feedback__company">- COO, AMERIMAR ENTERPRISES, INC.</p>
             </div>
         </div>
-        <footer class="footer">Footer</footer>
-
+        <footer class="footer">
+            <img src="./img/Group500.png" alt="Logos" class="footer__logos">
+        </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
